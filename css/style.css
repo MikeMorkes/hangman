@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Maiden+Orange');
+
+body {
+  font-family: 'Maiden Orange', serif;
+  color: #1f0902;
+  background: #c3a583 url('http://www.mikemorkes.com/codepen/hangman/parchment.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+
+#holder {
+  text-align: center;
+  color: #221003;
+  padding: 50px 0;
+}
+
+#theWord {
+  font-family: 'Maiden Orange', serif;
+  font-size: 70px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.float {
+  float: left;
+  margin-right: 20px;
+}
+
+#letterGuess {
+  padding-bottom: 20px;
+  height: 45px;
+  width: 55px;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+#messages {
+  text-align: center;
+  display: none;
+}
+
+#alert-box {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  z-index: 100000; 
+}
+
+#alert {
+  color: #ffffff;
+  position: relative;
+  left: -50%;
+  background: url('http://www.mikemorkes.com/codepen/hangman/alert-parchment.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  padding: 100px 50px 50px;
+  width: 640px;
+  height: 439px;
+}
+
+#alert-copy {
+  font-size: 90px;
+}
+
+#submit {
+  background: #1f0902;
+  border: none;
+}
+
+.letterButtons {
+  background-color: #351308 !important;
+  color: #fff;
+  font-size: 20px;
+  border: none !important;
+  margin-top: 10px;
+  margin-right: 5px;
+  width: 50px;
+  height: 45px;  
+}
+
+.letterButtonsGuessed {
+  background: #a4908a !important;
+  border: none !important;
+  margin-top: 10px;
+  margin-right: 5px;
+  width: 50px;
+  height: 45px;
+}
+
+input:focus,
+I select:focus,
+textarea:focus,
+button:focus {
+	outline: none !important;
+  background-color: #351308;
+  color: #fff !important;
+}
