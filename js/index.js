@@ -54,7 +54,7 @@ function guessLetter(letterValue) {
 
 // function to randomly pick word from database at start of each round
 function grabWord() {
-      $.getJSON("american-words.json", function(json) {
+      $.getJSON("../american-words.json", function(json) {
         
         var randNum = Math.floor(Math.random() * (107566 - 1 + 1));
         
