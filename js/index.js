@@ -56,7 +56,7 @@ function guessLetter(letterValue) {
 function grabWord() {
       $.getJSON("https://mikemorkes.github.io/hangman/american-words.json", function(json) {
         
-        var randNum = Math.floor(Math.random() * (107566 - 1 + 1));
+        var randNum = Math.floor(Math.random() * (1328 - 1 + 1));
         
         word = json[randNum].toUpperCase();
         console.log(word);
