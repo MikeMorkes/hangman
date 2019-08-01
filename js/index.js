@@ -3,7 +3,7 @@ $(document).ready(function () {
     '../img/parchment.jpg',
     '../img/alert-parchment.png',
     '../img/hangman1.png',
-    '../img/hangman2.png',
+    '../hangman/img/hangman2.png',
     '../img/hangman3.png',
     '../img/hangman4.png',
     '../img/hangman5.png',
