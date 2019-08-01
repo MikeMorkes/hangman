@@ -38,7 +38,7 @@ function guessLetter(letterValue) {
   
   if (pos == -1) {
     hangmanParts++;
-    document.getElementById("img").src = "../img/hangman" + hangmanParts + ".png";
+    document.getElementById("img").src = "../hangman/img/hangman" + hangmanParts + ".png";
     checkLose();   
   } else {
     for (b = 0; b < word.length; b++) {
