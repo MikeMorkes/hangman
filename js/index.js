@@ -1,15 +1,15 @@
 $(document).ready(function () {
   preload([
-    'http://www.mikemorkes.com/codepen/hangman/parchment.jpg',
-    'http://www.mikemorkes.com/codepen/hangman/alert-parchment.png',
-    'http://www.mikemorkes.com/codepen/hangman/hangman1.png',
-    'http://www.mikemorkes.com/codepen/hangman/hangman2.png',
-    'http://www.mikemorkes.com/codepen/hangman/hangman3.png',
-    'http://www.mikemorkes.com/codepen/hangman/hangman4.png',
-    'http://www.mikemorkes.com/codepen/hangman/hangman5.png',
-    'http://www.mikemorkes.com/codepen/hangman/hangman6.png',
-    'http://www.mikemorkes.com/codepen/hangman/hangman7.png',
-    'http://www.mikemorkes.com/codepen/hangman/hangman8.png'
+    '../img/parchment.jpg',
+    '../img/alert-parchment.png',
+    '../img/hangman1.png',
+    '../img/hangman2.png',
+    '../img/hangman3.png',
+    '../img/hangman4.png',
+    '../img/hangman5.png',
+    '../img/hangman6.png',
+    '../img/hangman7.png',
+    '../img/hangman8.png'
   ]);
 });
 
@@ -38,7 +38,7 @@ function guessLetter(letterValue) {
   
   if (pos == -1) {
     hangmanParts++;
-    document.getElementById("img").src = "http://www.mikemorkes.com/codepen/hangman/hangman" + hangmanParts + ".png";
+    document.getElementById("img").src = "../img/hangman" + hangmanParts + ".png";
     checkLose();   
   } else {
     for (b = 0; b < word.length; b++) {
@@ -105,7 +105,7 @@ function checkWin() {
 // function to check for a full hangman when letter guess is wrong, and reset if full hangman
 function checkLose() {
   if (hangmanParts == 8) {
-    document.getElementById("alert-copy").innerHTML = "NOOSE FOR YOU!";
+    document.getElementById("alert-copy").innerHTML = "WHY NOT HANG AROUND?";
     setTimeout(function() {
       document.getElementById("messages").style.display = "block";
     }, 750);      
@@ -250,7 +250,7 @@ $('#reset').click(function(evt) {
 // function to reset game
 function resetAll() {
   // RESET ILLUSTRATION
-  document.getElementById("img").src = "http://www.mikemorkes.com/codepen/hangman/hangman1.png";
+  document.getElementById("img").src = "../img/hangman1.png";
   
   // RESET THE LETTER BUTTONS 
   for (var i=0; i<alphabet.length; i++) {
