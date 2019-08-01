@@ -3,7 +3,7 @@
 body {
   font-family: 'Maiden Orange', serif;
   color: #1f0902;
-  background: #c3a583 url('http://www.mikemorkes.com/codepen/hangman/parchment.jpg');
+  background: #c3a583 url('../img/parchment.jpg');
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +58,7 @@ h3 {
   color: #ffffff;
   position: relative;
   left: -50%;
-  background: url('http://www.mikemorkes.com/codepen/hangman/alert-parchment.png');
+  background: url('../img/alert-parchment.png');
   background-position: 0 0;
   background-repeat: no-repeat;
   padding: 100px 50px 50px;
