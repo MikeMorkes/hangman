@@ -54,7 +54,7 @@ function guessLetter(letterValue) {
 
 // function to randomly pick word from database at start of each round
 function grabWord() {
-      $.getJSON("https://raw.githubusercontent.com/maheshgattani/HangMan-iOS/master/wordlist.json", function(json) {
+      $.getJSON("../wordlist.json", function(json) {
         
         var randNum = Math.floor(Math.random() * (1328 - 1 + 1));
         
