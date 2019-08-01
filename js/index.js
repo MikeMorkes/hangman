@@ -1,15 +1,15 @@
 $(document).ready(function () {
   preload([
-    '../img/parchment.jpg',
-    '../img/alert-parchment.png',
-    '../img/hangman1.png',
+    '../hangman/img/parchment.jpg',
+    '../hangman/img/alert-parchment.png',
+    '../hangman/img/hangman1.png',
     '../hangman/img/hangman2.png',
-    '../img/hangman3.png',
-    '../img/hangman4.png',
-    '../img/hangman5.png',
-    '../img/hangman6.png',
-    '../img/hangman7.png',
-    '../img/hangman8.png'
+    '../hangman/img/hangman3.png',
+    '../hangman/img/hangman4.png',
+    '../hangman/img/hangman5.png',
+    '../hangman/img/hangman6.png',
+    '../hangman/img/hangman7.png',
+    '../hangman/img/hangman8.png'
   ]);
 });
 
@@ -250,7 +250,7 @@ $('#reset').click(function(evt) {
 // function to reset game
 function resetAll() {
   // RESET ILLUSTRATION
-  document.getElementById("img").src = "../img/hangman1.png";
+  document.getElementById("img").src = "../hangman/img/hangman1.png";
   
   // RESET THE LETTER BUTTONS 
   for (var i=0; i<alphabet.length; i++) {
